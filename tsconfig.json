@@ -1,0 +1,15 @@
+{
+  "extends": "astro/tsconfigs/base",
+
+  "compilerOptions": {
+    "moduleResolution": "node",
+    "baseUrl": "./src",
+    "paths": {
+      "@components/*": ["components/*.astro"],
+      "@layouts/*": ["layouts/*.astro"],
+      "@interfaces/*": ["interfaces/*.ts"],
+      "@mocks/*": ["mocks/*.json"],
+      "@utils/*": ["utils/*.ts"]
+    },
+  },
+}

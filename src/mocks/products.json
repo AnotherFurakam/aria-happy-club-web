@@ -1,0 +1,106 @@
+[
+  {
+    "productId": "1",
+    "name": "Peluche Suave Amiguito",
+    "description": "Peluche suave y adorable, el compañero perfecto para abrazar en todas las aventuras imaginativas.",
+    "image": "https://res.cloudinary.com/epantry/image/upload/v1621884380/gcmwr0n778ck51ngdcrg.jpg",
+    "isActive": true,
+    "createdAt": "2023-09-15T08:30:00Z"
+  },
+  {
+    "productId": "2",
+    "name": "Set de Pinturas para Niños",
+    "description": "Set de pinturas no tóxicas y pinceles para que los pequeños artistas den rienda suelta a su creatividad.",
+    "image": "https://res.cloudinary.com/epantry/image/upload/v1621884380/gcmwr0n778ck51ngdcrg.jpg",
+    "isActive": true,
+    "createdAt": "2023-09-16T09:45:00Z"
+  },
+  {
+    "productId": "3",
+    "name": "Libro de Cuentos Interactivo",
+    "description": "Libro de cuentos interactivo con sonidos y colores vibrantes para fomentar la lectura desde temprana edad.",
+    "image": "https://res.cloudinary.com/epantry/image/upload/v1621884380/gcmwr0n778ck51ngdcrg.jpg",
+    "isActive": true,
+    "createdAt": "2023-09-17T10:15:00Z"
+  },
+  {
+    "productId": "4",
+    "name": "Rompecabezas Educativo",
+    "description": "Rompecabezas educativo con piezas grandes y coloridas para estimular el pensamiento lógico de los niños.",
+    "image": "https://res.cloudinary.com/epantry/image/upload/v1621884380/gcmwr0n778ck51ngdcrg.jpg",
+    "isActive": true,
+    "createdAt": "2023-09-18T11:20:00Z"
+  },
+  {
+    "productId": "5",
+    "name": "Juego de Construcción de Bloques",
+    "description": "Juego de construcción de bloques que ayuda a desarrollar la coordinación y habilidades motoras finas de los niños.",
+    "image": "https://res.cloudinary.com/epantry/image/upload/v1621884380/gcmwr0n778ck51ngdcrg.jpg",
+    "isActive": true,
+    "createdAt": "2023-09-19T12:05:00Z"
+  },
+  {
+    "productId": "6",
+    "name": "Pelota Saltarina Hinchable",
+    "description": "Pelota saltarina hinchable con asas para que los niños disfruten de horas de diversión activa y saludable.",
+    "image": "https://res.cloudinary.com/epantry/image/upload/v1621884380/gcmwr0n778ck51ngdcrg.jpg",
+    "isActive": true,
+    "createdAt": "2023-09-20T13:30:00Z"
+  },
+  {
+    "productId": "7",
+    "name": "Caja de Juguetes Didácticos",
+    "description": "Caja de juguetes didácticos que estimulan el aprendizaje temprano y la resolución de problemas de manera divertida.",
+    "image": "https://res.cloudinary.com/epantry/image/upload/v1621884380/gcmwr0n778ck51ngdcrg.jpg",
+    "isActive": true,
+    "createdAt": "2023-09-21T14:45:00Z"
+  },
+  {
+    "productId": "8",
+    "name": "Cocinita de Juguete",
+    "description": "Cocinita de juguete con accesorios, perfecta para que los pequeños chefs desarrollen sus habilidades culinarias.",
+    "image": "https://res.cloudinary.com/epantry/image/upload/v1621884380/gcmwr0n778ck51ngdcrg.jpg",
+    "isActive": true,
+    "createdAt": "2023-09-22T15:20:00Z"
+  },
+  {
+    "productId": "9",
+    "name": "Muñeca Articulada",
+    "description": "Muñeca articulada con ropa intercambiable, ideal para fomentar el juego creativo y la imaginación.",
+    "image": "https://res.cloudinary.com/epantry/image/upload/v1621884380/gcmwr0n778ck51ngdcrg.jpg",
+    "isActive": true,
+    "createdAt": "2023-09-23T16:10:00Z"
+  },
+  {
+    "productId": "10",
+    "name": "Juego de Tren de Juguete",
+    "description": "Juego de tren de juguete con vías y figuras, perfecto para horas de diversión construyendo y jugando.",
+    "image": "https://res.cloudinary.com/epantry/image/upload/v1621884380/gcmwr0n778ck51ngdcrg.jpg",
+    "isActive": true,
+    "createdAt": "2023-09-24T17:30:00Z"
+  },
+  {
+    "productId": "11",
+    "name": "Juguete Educativo de Ciencia",
+    "description": "Juguete educativo de ciencia para niños curiosos, con experimentos y actividades para aprender de manera divertida.",
+    "image": "https://res.cloudinary.com/epantry/image/upload/v1621884380/gcmwr0n778ck51ngdcrg.jpg",
+    "isActive": true,
+    "createdAt": "2023-09-25T18:15:00Z"
+  },
+  {
+    "productId": "12",
+    "name": "Patines Ajustables para Niños",
+    "description": "Patines ajustables con ruedas luminosas, ideales para desarrollar habilidades de equilibrio y coordinación en los niños.",
+    "image": "https://res.cloudinary.com/epantry/image/upload/v1621884380/gcmwr0n778ck51ngdcrg.jpg",
+    "isActive": true,
+    "createdAt": "2023-09-26T19:20:00Z"
+  },
+  {
+    "productId": "13",
+    "name": "Puzzle de Alfombra Interactiva",
+    "description": "Puzzle de alfombra interactiva con números y letras para estimular el aprendizaje temprano y el juego.",
+    "image": "https://res.cloudinary.com/epantry/image/upload/v1621884380/gcmwr0n778ck51ngdcrg.jpg",
+    "isActive": true,
+    "createdAt": "2023-09-27T20:30:00Z"
+  }
+]

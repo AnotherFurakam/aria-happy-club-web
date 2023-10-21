@@ -1,0 +1,41 @@
+---
+import { Image } from "astro:assets";
+import FacebookIcon from "@components/icons/Facebook";
+import InstagramIcon from "@components/icons/Instagram";
+import WhatsAppIcon from "@components/icons/WhatsAppSolid";
+---
+
+<footer class="flex bg-purple py-5 h-40">
+  <div class="container mx-auto flex justify-between gap-4">
+    <div class="w-full">
+      <Image
+        src="/img/logo-footer.png"
+        alt="logo-footer.png"
+        width="155"
+        height="90"
+      />
+    </div>
+    <hr class="bg-green max-w-[1px] h-[90%] my-auto w-full" />
+    <div class="my-auto w-full">
+      <p class="text-white text-lg underline">
+        Exclusivo, patio de juegos y eventos infantiles
+      </p>
+      <p class="text-yellow-200 text-xl">#DiversiónEnFamilia</p>
+    </div>
+    <hr class="bg-green max-w-[1px] h-[90%] my-auto w-full" />
+    <div class="flex flex-col w-full items-center justify-center gap-3">
+      <ul class="flex w-full gap-4 justify-center items-center">
+        <li>
+          <WhatsAppIcon twClass="w-8" />
+        </li>
+        <li>
+          <InstagramIcon twClass="w-8" />
+        </li>
+        <li>
+          <FacebookIcon twClass="w-8" />
+        </li>
+      </ul>
+      <p class="text-white">© 2022 Aria Happy Club All rights reserved.</p>
+    </div>
+  </div>
+</footer>

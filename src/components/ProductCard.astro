@@ -1,0 +1,16 @@
+---
+import type { Product } from "@interfaces/product";
+
+interface Props {
+  product: Product;
+}
+
+const { product } = Astro.props;
+---
+
+<div class="bg-purple/70 p-2 rounded-md cursor-pointer hover:bg-purple/80">
+  <img src={product.image} alt={product.name}>
+  <div>
+    <p class="text-white text-lg">{product.name}</p>
+  </div>
+</div>
