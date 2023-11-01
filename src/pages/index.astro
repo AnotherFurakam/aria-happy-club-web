@@ -1,50 +1,15 @@
 ---
 import MainLayout from "@layouts/MainLayout";
-import SearchIcon from "@components/icons/Search";
-import ProductCard from "@components/ProductCard";
-import products from "@mocks/products";
-import posts from "@mocks/posts";
-import WhatsAppOutlineIcon from "@components/icons/WhatsAppOutline";
-import PostCard from "@components/PostCard";
+import Carousel from "@components/Carousel";
+import imgcarousel from "@mocks/imgcarousel"
 
-const topProduct = products.slice(0, 4);
-const topPosts = posts.slice(0, 4);
+const topimgcarousel = imgcarousel.slice(0, 2);
 ---
 
 <MainLayout title="Home">
-  <main class="container mx-auto py-10">
-    <div class="grid grid-cols-[minmax(200px,20%)_60%_minmax(200px,20%)] gap-3">
-      <section class="flex flex-col gap-5">
-        <div
-          class="border-purple/60 border-2 flex h-9 rounded-md overflow-hidden peer-focus:border-blue-300/80"
-        >
-          <input type="text" class="w-full h-full px-2 outline-none peer" />
-          <button
-            class="bg-purple/80 text-white w-10 flex justify-center items-center"
-          >
-            <SearchIcon />
-          </button>
-        </div>
-        <div class="flex flex-col gap-3">
-          {topProduct.map((product) => <ProductCard product={product} />)}
-        </div>
-      </section>
-      <section class="flex flex-col gap-5 p-5">
-        {topPosts.map((post) => <PostCard post={post} />)}
-      </section>
-      <section class="">
-        <a
-          href=""
-          class="flex items-center justify-center bg-green hover:brightness-105 p-2 rounded-md gap-4 shadow-md"
-        >
-          <span class="text-lg font-semibold text-teal-900">Escríbenos</span>
-          <WhatsAppOutlineIcon
-            width={35}
-            height={35}
-            tailwindColor="fill-white"
-          />
-        </a>
-      </section>
+  <main>
+    <div>
+      <Carousel images={topimgcarousel}>
     </div>
   </main>
 </MainLayout>

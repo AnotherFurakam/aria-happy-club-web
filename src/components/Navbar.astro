@@ -5,17 +5,26 @@ const currentPath = pathname.slice(1);
 
 <header class="bg-purple flex h-16">
   <nav class="flex justify-between container mx-auto my-3">
-    <h1 class="text-white font-bold text-3xl green-border drop-shadow">
+    <h1 class="text-white font-bold text-4xl drop-shadow">
       Aria Happy Club
     </h1>
-    <ul class="flex gap-4 items-center">
+    <ul class="flex gap-4 items-center font-semibold drop-shadow-sm">
       <li class="cursor-pointer">
         <a
           class:list={[
-            "text-white py-1 px-2 rounded-md ",
+            "text-white py-1 px-2 rounded-md",
             currentPath === "" ? "bg-green !text-purple" : "hover:underline",
           ]}
           href="/">Inicio</a
+        >
+      </li>
+      <li class="cursor-pointer">
+        <a
+          class:list={[
+            "text-white py-1 px-2 rounded-md",
+            currentPath === "publications" ? "bg-green !text-purple" : "hover:underline",
+          ]}
+          href="/publications">Eventos</a
         >
       </li>
       <li class="cursor-pointer">
