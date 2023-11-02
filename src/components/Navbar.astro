@@ -13,7 +13,7 @@ const currentPath = pathname.slice(1);
         <a
           class:list={[
             "text-white py-1 px-2 rounded-md",
-            currentPath === "" ? "bg-green !text-purple" : "hover:underline",
+            currentPath === "" && "bg-green !text-purple",
           ]}
           href="/">Inicio</a
         >
@@ -22,7 +22,7 @@ const currentPath = pathname.slice(1);
         <a
           class:list={[
             "text-white py-1 px-2 rounded-md",
-            currentPath === "publications" ? "bg-green !text-purple" : "hover:underline",
+            currentPath === "publications" && "bg-green !text-purple",
           ]}
           href="/publications">Eventos</a
         >
@@ -31,7 +31,7 @@ const currentPath = pathname.slice(1);
         <a
           class:list={[
             "text-white py-1 px-2 rounded-md ",
-            currentPath === "products" ? "bg-green !text-purple" : "hover:underline",
+            currentPath === "products" && "bg-green !text-purple",
           ]}
           href="/products">Productos</a
         >
@@ -40,7 +40,7 @@ const currentPath = pathname.slice(1);
         <a
           class:list={[
             "text-white py-1 px-2 rounded-md ",
-            currentPath === "info" ? "bg-green !text-purple" : "hover:underline",
+            currentPath === "info" && "bg-green !text-purple",
           ]}
           href="/info">Información</a
         >
