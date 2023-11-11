@@ -18,7 +18,7 @@ export default defineConfig({
   vite: {
     resolve: {
       alias: {
-        "@layouts/MainLayout": "@/layouts/MainLayout.js",
+        "@layouts/MainLayout": "@/layouts/MainLayout.astro",
       },
     },
   },
