@@ -1,7 +1,23 @@
 ---
+import type { Product } from "@interfaces/product";
 import MainLayout from "@layouts/MainLayout";
+import ProductCard from "./components/ProductCard.astro";
+
+const productResponse = await fetch(
+  "http://localhost:5000/api/product?pageNumber=1&pageSize=20"
+).then((res) => res.json());
+const topProduct: Product[] = productResponse.data;
 ---
 
 <MainLayout title="Products">
-  <h1>Products</h1>
+  <main class="my-5">
+    <div class="flex flex-col items-center gap-10">
+      <h1 class="text-center text-4xl border-b-[3px] border-b-purple p-2">
+        Productos y servicios disponibles
+      </h1>
+      <div class="flex gap-4">
+        {topProduct.map((product) => <ProductCard product={product} />)}
+      </div>
+    </div>
+  </main>
 </MainLayout>

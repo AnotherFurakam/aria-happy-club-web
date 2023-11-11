@@ -2,13 +2,20 @@
 import MainLayout from "@layouts/MainLayout";
 import SearchIcon from "@components/icons/Search";
 import ProductCard from "@components/ProductCard";
-import products from "@mocks/products";
-import posts from "@mocks/posts";
 import WhatsAppOutlineIcon from "@components/icons/WhatsAppOutline";
 import PostCard from "@components/PostCard";
+import type { Product } from "@interfaces/product";
+import type { Post } from "@interfaces/post";
 
-const topProduct = products.slice(0, 4);
-const topPosts = posts.slice(0, 4);
+const productResponse = await fetch(
+  "http://localhost:5000/api/product?pageNumber=1&pageSize=5"
+).then((res) => res.json());
+const topProduct: Product[] = productResponse.data;
+
+const postResponse = await fetch(
+  "http://localhost:5000/api/post?pageNumber=1&pageSize=10"
+).then((res) => res.json());
+const topPosts: Post[] = postResponse.data;
 ---
 
 <MainLayout title="Publications">
@@ -34,8 +41,8 @@ const topPosts = posts.slice(0, 4);
       </section>
       <section class="">
         <a
-          href=""
-          class="flex items-center justify-center bg-green hover:brightness-105 p-2 rounded-md gap-4 shadow-md"
+          id="wspButton"
+          class="flex items-center justify-center bg-green hover:brightness-105 p-2 rounded-md gap-4 shadow-md cursor-pointer"
         >
           <span class="text-lg font-semibold text-teal-900">Escríbenos</span>
           <WhatsAppOutlineIcon
@@ -48,3 +55,13 @@ const topPosts = posts.slice(0, 4);
     </div>
   </main>
 </MainLayout>
+
+<script>
+  const wspButton = document.getElementById("wspButton");
+  wspButton.addEventListener("click", () => {
+    window.open(
+      "https://api.whatsapp.com/send?phone=51936543222&text=Hola%20estoy%20interesado%20en%20saber%20mas%20acerca%20de%20Aria%20Happy%20Club%20%F0%9F%98%80",
+      "_blank"
+    );
+  });
+</script>

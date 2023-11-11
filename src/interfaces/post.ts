@@ -2,7 +2,7 @@ export interface Post {
   postId: string;
   title: string;
   body: string;
-  image: string;
+  urlImage: string;
   isActive: boolean;
-  createdAt: string;
+  createAt: string;
 }
