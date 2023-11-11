@@ -1,11 +1,11 @@
 ---
-import MainLayout from "@layouts/MainLayout";
-import SearchIcon from "@components/icons/Search";
-import ProductCard from "@components/ProductCard";
-import WhatsAppOutlineIcon from "@components/icons/WhatsAppOutline";
-import PostCard from "@components/PostCard";
-import type { Product } from "@interfaces/product";
-import type { Post } from "@interfaces/post";
+import MainLayout from "../../layouts/MainLayout.astro";
+import SearchIcon from "../../components/icons/Search.astro";
+import ProductCard from "../../components/ProductCard.astro";
+import WhatsAppOutlineIcon from "../../components/icons/WhatsAppOutline.astro";
+import PostCard from "../../components/PostCard.astro";
+import type { Product } from "../../interfaces/product";
+import type { Post } from "../../interfaces/post";
 
 const productResponse = await fetch(
   "https://samamander-api.onrender.com/api/product?pageNumber=1&pageSize=5"

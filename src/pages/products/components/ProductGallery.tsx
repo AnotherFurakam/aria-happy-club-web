@@ -1,4 +1,4 @@
-import type { Product } from "@interfaces/product";
+import type { Product } from "../../../interfaces/product";
 import ProductCard from "./ProductCard.tsx";
 import { useEffect, useState } from "react";
 
