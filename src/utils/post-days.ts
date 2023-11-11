@@ -1,5 +1,5 @@
 import { formatDistanceToNow } from "date-fns";
-import { es } from "date-fns/locale";
+import es from "date-fns/locale/es/index.js";
 export function GetDiffTime(stringDate: string): string {
   const date: Date = new Date(stringDate);
 

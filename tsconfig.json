@@ -1,15 +1,26 @@
 {
   "extends": "astro/tsconfigs/base",
-
   "compilerOptions": {
     "moduleResolution": "node",
-    "baseUrl": "./src",
+    "baseUrl": "C:/Users/frank/Desktop/DEV/samamander-frontend/aria-happy-club-web/src",
     "paths": {
-      "@components/*": ["components/*.astro"],
-      "@layouts/*": ["layouts/*.astro"],
-      "@interfaces/*": ["interfaces/*.ts"],
-      "@mocks/*": ["mocks/*.json"],
-      "@utils/*": ["utils/*.ts"]
+      "@components/*": [
+        "components/*.astro","components/*.tsx"
+      ],
+      "@layouts/*": [
+        "layouts/*.astro"
+      ],
+      "@interfaces/*": [
+        "interfaces/*.ts"
+      ],
+      "@mocks/*": [
+        "mocks/*.json"
+      ],
+      "@utils/*": [
+        "utils/*.ts"
+      ]
     },
-  },
+    "jsx": "react-jsx",
+    "jsxImportSource": "react"
+  }
 }
