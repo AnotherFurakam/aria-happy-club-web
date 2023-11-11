@@ -16,10 +16,10 @@ export default defineConfig({
     react(),
   ],
   vite: {
-    resolve: {
-      alias: {
-        "@layouts/MainLayout": "@/layouts/MainLayout.astro",
-      },
-    },
+    build: {
+      rollupOptions: {
+        external: ["@layouts/MainLayout"]
+      }
+    }
   },
 });
