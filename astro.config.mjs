@@ -18,8 +18,14 @@ export default defineConfig({
   vite: {
     build: {
       rollupOptions: {
-        external: ["@layouts/*","@mocks/*","@interfaces/*","@utils/*","@components/*"]
-      }
-    }
+        external: [
+          /^@layouts\//,
+          /^@mocks\//,
+          /^@interfaces\//,
+          /^@utils\//,
+          /^@components\//,
+        ],
+      },
+    },
   },
 });
