@@ -8,12 +8,12 @@ import type { Product } from "@interfaces/product";
 import type { Post } from "@interfaces/post";
 
 const productResponse = await fetch(
-  "http://localhost:5000/api/product?pageNumber=1&pageSize=5"
+  "https://samamander-api.onrender.com/api/product?pageNumber=1&pageSize=5"
 ).then((res) => res.json());
 const topProduct: Product[] = productResponse.data;
 
 const postResponse = await fetch(
-  "http://localhost:5000/api/post?pageNumber=1&pageSize=10"
+  "https://samamander-api.onrender.com/api/post?pageNumber=1&pageSize=10"
 ).then((res) => res.json());
 const topPosts: Post[] = postResponse.data;
 ---

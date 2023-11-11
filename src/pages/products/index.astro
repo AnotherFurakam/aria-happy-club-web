@@ -4,7 +4,7 @@ import MainLayout from "@layouts/MainLayout";
 import ProductCard from "./components/ProductCard.astro";
 
 const productResponse = await fetch(
-  "http://localhost:5000/api/product?pageNumber=1&pageSize=20"
+  "https://samamander-api.onrender.com/api/product?pageNumber=1&pageSize=20"
 ).then((res) => res.json());
 const topProduct: Product[] = productResponse.data;
 ---
