@@ -3,7 +3,8 @@ import MainLayout from "../../layouts/MainLayout.astro";
 import SearchIcon from "../../components/icons/Search.astro";
 import ProductCard from "../../components/ProductCard.astro";
 import WhatsAppOutlineIcon from "../../components/icons/WhatsAppOutline.astro";
-import PostCard from "../../components/PostCard.astro";
+import Posts from "./components/Posts";
+import Products from "./components/Products";
 import type { Product } from "../../interfaces/product";
 import type { Post } from "../../interfaces/post";
 
@@ -33,11 +34,11 @@ const topPosts: Post[] = postResponse.data;
           </button>
         </div>
         <div class="flex flex-col gap-3">
-          {topProduct.map((product) => <ProductCard product={product} />)}
+          <Products client:load />
         </div>
       </section>
       <section class="flex flex-col gap-5 p-5">
-        {topPosts.map((post) => <PostCard post={post} />)}
+        <Posts client:load />
       </section>
       <section class="">
         <a
