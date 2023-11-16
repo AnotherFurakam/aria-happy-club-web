@@ -23,7 +23,7 @@ const ProductGallery = () => {
         <h1 className="text-center text-4xl border-b-[3px] border-b-purple p-2">
           Productos y servicios disponibles
         </h1>
-        <div className="flex gap-4">
+        <div className="flex gap-4 flex-wrap containe justify-center">
           {topProduct &&
             topProduct.map((product) => <ProductCard product={product} />)}
         </div>
